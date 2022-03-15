@@ -1,0 +1,58 @@
+<html>
+<body>
+    <h3>Restaurant Recommendation</h3>
+
+<div>
+  <form action="/predict" method="POST">
+    <label for="gender">Choose customer's Gender:</label>
+        <select name="gender" id="gender">
+           <option value="male">Male</option>
+           <option value="female">Female</option>
+        </select>
+     <br>
+     <br>
+
+   <label for="customer_id">CustomerID:</label><br>
+        <input type="text" id="customer_id" name="customer_id"><br><br>
+
+   <label for="vendor_id">VendorID:</label><br>
+       <input type="number" id="vendor_id" name="vendor_id"><br><br>
+
+   <label for="vendor_rating">Mean rating of Vendor:</label><br>
+        <input type="number" id="vendor_rating" name="vendor_rating"><br><br>
+
+    <label for="vendor_rating">Driver rating:</label><br>
+        <input type="number" id="driver_rating" name="driver_rating"><br><br>
+
+   <label for="vendor_category">Choose a vendor category:</label>
+        <select name="vendor_category" id="vendor_category">
+            <option value="Restaurants">Restaurants</option>
+            <option value="Sweets and Bakes">Sweets & Bakes</option>
+        </select>
+
+   <p>Is Vendor your favorite?:</p>
+   <input type="radio" id="YES" name="fav_vendor" value="YES">
+      <label for="YES">YES</label><br>
+   <input type="radio" id="NO" name="fav_vendor" value="NO">
+      <label for="NO">NO</label><br><br>
+
+   <label for="Location">Choose a customer's Location:</label>
+         <select name="Location" id="location">
+           <option value="work">Work</option>
+           <option value="home">Home</option>
+           <option value="other">Others</option>
+         </select>
+
+  <p>Choose Vendor's opening timings:</p>
+        <input type="checkbox" id="morning" name="morning" value="Morning">
+        <label for="morning">Morning</label><br>
+        <input type="checkbox" id="afternoon" name="afternoon" value="afternoon">
+        <label for="afternoon"> Afternoon</label><br>
+        <input type="checkbox" id="Evening" name="Evening" value="Evening">
+        <label for="evening">Evening</label>
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</body>
+</html>
